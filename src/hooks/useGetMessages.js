@@ -12,7 +12,7 @@ const useGetMessages = () => {
 			setLoading(true);
             try {
                 const accessToken = getAccessToken();
-                const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/messages/${selectedConversation._id}`, {
+                const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/v1.0/messages/${selectedConversation._id}`, {
                     headers: {
                         Authorization: accessToken 
                     }
