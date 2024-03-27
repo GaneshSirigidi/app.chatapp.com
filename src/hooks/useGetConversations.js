@@ -11,7 +11,7 @@ const useGetConversations = () => {
 			setLoading(true);
             try {
                 const accessToken = getAccessToken();
-                const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/users`,
+                const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/v1.0/users`,
                 {
                     headers: {
                         Authorization: accessToken // Include access token in the request header

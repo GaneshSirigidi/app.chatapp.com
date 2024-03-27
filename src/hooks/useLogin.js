@@ -12,7 +12,7 @@ const useLogIn = () => {
 
 		setLoading(true);
 		try {
-			const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/users/signin`, {
+			const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/v1.0/users/signin`, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({email,password}),

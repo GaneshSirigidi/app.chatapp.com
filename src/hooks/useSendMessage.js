@@ -13,7 +13,7 @@ const useSendMessage = () => {
         setLoading(true)
         try {
             const accessToken = getAccessToken();
-            const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/messages/send-messsage/${selectedConversation._id}`, {
+            const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/v1.0/messages/send-messsage/${selectedConversation._id}`, {
                 method: "POST",
 				headers: {
                     "Content-Type": "application/json",
